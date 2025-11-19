@@ -5,29 +5,30 @@
     <title>Keramiikkataidetta ja kalannahkaa</title>
     <meta name="description" content="Keramiikkaa ja kalannahkaa">
     <meta name="google-site-verification" content="ShMAr4sA47X_fdXsIuLwyxhww94JpZjD7rSGB13sS70" />
+    
     <style>
-    nav ul {
-        list-style: none;        /* Poistaa pisteet */
-        padding: 0;
-        margin: 0;
-        display: flex;           /* Asettaa linkit vierekkäin */
-        gap: 20px;               /* Väliä linkkien väliin */
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
 
-    nav a {
-        text-decoration: none;   /* Poistaa alleviivauksen */
-        color: black;            /* Linkkien väri */
-        font-weight: bold;
-    }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
 
-    nav a:hover {
-        color: blue;             /* Väri kun hiiri menee päälle */
-    }
-</style>
-
+        nav a:hover {
+            color: blue;
+        }
+    </style>
 </head>
+
 <body>
-        <header>
+    <header>
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -36,23 +37,35 @@
                 <li><a href="#yhteystiedot">Yhteystiedot</a></li>
             </ul>
         </nav>
-        <h1 style="color:blue;">Keramiikkaa ja kalannahkaa</h1>
+
+        <h1 id="home" style="color:blue;">Keramiikkaa ja kalannahkaa</h1>
     </header>
+
     <main>
-        <p>Keramiikka ja kalannahka ovat materiaaleja, jotka ovat olleet käytössä jo vuosituhansia. 
-        GammaE luo materiaalilähtöisiä sisustusesineitä ja asusteita modernisti perinteitä kunnioittaen.</p>
-        <h2>Keramiikka</h2>
-        <img src="kenkä.jpg" width="300" height="200" alt="Piirtämäni kenkä perspektiivissä">
-        <h2>Kalannahka</h2>
+
+        <section id="minusta">
+            <p>
+                Keramiikka ja kalannahka ovat materiaaleja, jotka ovat olleet käytössä jo vuosituhansia. 
+                GammaE luo materiaalilähtöisiä sisustusesineitä ja asusteita modernisti perinteitä kunnioittaen.
+            </p>
+        </section>
+
+        <section id="töitäni">
+            <h2>Keramiikka</h2>
+            <img src="kenkä.jpg" width="300" height="200" alt="Piirtämäni kenkä perspektiivissä">
+        </section>
+
+        <section id="yhteystiedot">
+            <h2>Kalannahka</h2>
+        </section>
+
     </main>
+
     <footer>
         <p>All rights reserved</p>
     </footer>
 </body>
 </html>
-
-
-
 
 
 
