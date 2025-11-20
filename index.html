@@ -6,9 +6,10 @@
     <meta name="description" content="Keramiikkaa ja kalannahkaa">
     <meta name="google-site-verification" content="ShMAr4sA47X_fdXsIuLwyxhww94JpZjD7rSGB13sS70" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <style>
-        /* Google Font Noto Sans Regular */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap');
+        /* Google Font Noto Sans Thin */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
 
         body {
             margin: 0;
@@ -22,8 +23,9 @@
         }
 
         .topbar {
-            position: sticky; /* pysyy ylhäällä */
+            position: sticky;
             top: 0;
+            z-index: 1000;
             width: 100%;
             max-width: 1920px;
             height: 119px;
@@ -33,7 +35,6 @@
             padding: 0 40px;
             box-sizing: border-box;
             background-color: white;
-            z-index: 1000; /* pysyy päällimmäisenä */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
@@ -52,7 +53,7 @@
         nav a {
             text-decoration: none;
             font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
+            font-weight: 100;
             font-size: 32px;
             color: black;
         }
@@ -77,13 +78,13 @@
 
         .hero-text {
             position: absolute;
-            top: 70%;       /* alemmas */
-            right: 8%;      /* oikealle */
+            top: 60%;         /* hieman ylempänä */
+            right: 8%;        /* oikealle */
             color: #FFFFFF;
             text-align: right;
             font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            font-size: 40px;
+            font-weight: 100;  /* Thin */
+            font-size: 40px;   /* isompi kuin aiemmin */
             line-height: 1.4;
             max-width: 400px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
@@ -134,7 +135,7 @@
 
             .hero-text {
                 font-size: 30px;
-                top: 65%;
+                top: 55%;
                 right: 6%;
                 max-width: 300px;
             }
@@ -164,7 +165,7 @@
 
             .hero-text {
                 font-size: 22px;
-                top: 55%;
+                top: 50%;
                 right: 5%;
                 max-width: 250px;
             }
@@ -193,11 +194,11 @@
         <img src="leikattu_stilli.jpg" alt="Gamma E still" class="hero-image">
         <div class="hero-text">
             <p>
-            Gamma E virtaa sinussa<br>
-            Joka näkee auringon silmät kiinni<br>
-            Jonka karvat nousevat pystyyn innosta ja intohimosta<br>
-            Joka rakastaa syvemmin kuin maan ytimeen on matkaa<br>
-            Jonka kyyneleet muovaavat rannattomia uomia
+                Gamma E virtaa sinussa<br>
+                Joka näkee auringon silmät kiinni<br>
+                Jonka karvat nousevat pystyyn innosta ja intohimosta<br>
+                Joka rakastaa syvemmin kuin maan ytimeen on matkaa<br>
+                Jonka kyyneleet muovaavat rannattomia uomia
             </p>
         </div>
     </section>
