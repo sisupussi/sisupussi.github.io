@@ -9,53 +9,80 @@
 
     
     <style>
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
+/* Google Font Noto Sans Thin */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
 
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 40px;
-            letter-spacing: 4px;
-        }
+header {
+    width: 100%;
+    height: 159px;             /* headerin korkeus Figman mukaan */
+    background-color: #FFCBBC; /* taustaväri */
+    display: flex;
+    justify-content: center;    /* keskittää topbar vaakasuunnassa */
+    align-items: flex-start;    /* logo ja menu alkaa ylhäältä */
+    position: relative;
+}
 
-        nav a:hover {
-            color: white;
-        }
-        header {
-    background-color: #FFCBBC;  /* Vaalea taustaväri */
-    padding: 20px 0;            /* Yläpalkin korkeus */
+.topbar {
+    width: 1920px;             /* leveys kuten Figma frame */
+    height: 159px;
+    display: flex;
+    justify-content: flex-start; /* logo vasemmalle */
+    align-items: flex-start;     
+    position: relative;
+}
+
+.logo {
+    width: 154px;              /* Figman koko */
+    height: 77px;
+    position: absolute;
+    top: 43px;                 /* Figman Y */
+    left: 83px;                /* Figman X */
+}
+
+nav {
+    margin-left: auto;         /* työntää navin oikealle */
+    display: flex;
+    align-items: center;
+    height: 159px;
+    padding-right: 40px;       /* sisäreuna */
 }
 
 nav ul {
-    justify-content: center;    /* Keskittää valikon */
-}
-        h1, h2, nav a {
-    font-family: 'Bebas Neue', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 69px;                 /* annettu välistys linkkien välillä */
+    margin: 0;
+    padding: 0;
 }
 
-    </style>
+nav a {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;          /* Thin */
+    font-size: 64px;           /* annettu koko */
+    color: black;
+}
+
+nav a:hover {
+    color: white;               /* hover-efekti */
+}
+
 </head>
 
 <body>
-    <header>
+<header>
+    <div class="topbar">
+        <img src="leikattu_stilli.jpg" alt="Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#minusta">Minusta</a></li>
-                <li><a href="#töitäni">Töitäni</a></li>
-                <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+                <li><a href="#tarina">TARINA</a></li>
+                <li><a href="#galleria">GALLERIA</a></li>
+                <li><a href="#yhteystiedot">YHTEYSTIEDOT</a></li>
             </ul>
         </nav>
-
-        <h1 id="home" style="color:blue;">Keramiikkaa ja kalannahkaa</h1>
-    </header>
+    </div>
+</header>
 
     <main>
 
@@ -82,6 +109,7 @@ nav ul {
     </footer>
 </body>
 </html>
+
 
 
 
