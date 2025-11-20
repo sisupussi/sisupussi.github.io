@@ -6,39 +6,31 @@
     <meta name="description" content="Keramiikkaa ja kalannahkaa">
     <meta name="google-site-verification" content="ShMAr4sA47X_fdXsIuLwyxhww94JpZjD7rSGB13sS70" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
 
     <style>
-        /* Google Font Noto Sans Thin */
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
-
         body {
             margin: 0;
             font-family: 'Noto Sans', sans-serif;
             background-color: #f8f8f8;
         }
 
-        /* HEADER */
-        header {
-            width: 100%;
-        }
-
+        /* Topbar */
         .topbar {
             position: sticky;
             top: 0;
-            z-index: 1000;
             width: 100%;
-            max-width: 1920px;
-            height: 119px;
+            background-color: white;
+            z-index: 1000;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 40px;
+            height: 119px;
             box-sizing: border-box;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .logo {
+        .topbar .logo {
             height: 58px;
         }
 
@@ -62,7 +54,7 @@
             color: #FFCBBC;
         }
 
-        /* HERO SECTION */
+        /* Hero image */
         #hero {
             position: relative;
             width: 100%;
@@ -78,36 +70,26 @@
 
         .hero-text {
             position: absolute;
-            top: 60%;         /* hieman ylempänä */
-            right: 8%;        /* oikealle */
+            top: 50%;       /* vähän ylemmäs kuin keskellä */
+            right: 10%;
+            transform: translateY(-50%);
             color: #FFFFFF;
             text-align: right;
             font-family: 'Noto Sans', sans-serif;
-            font-weight: 100;  /* Thin */
-            font-size: 40px;   /* isompi kuin aiemmin */
+            font-weight: 100;
+            font-size: 36px;
             line-height: 1.4;
             max-width: 400px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            white-space: pre-line; /* rivinvaihdot näkyviin */
         }
 
-        /* MAIN CONTENT */
+        /* Main content */
         main {
             max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        section {
-            margin-bottom: 60px;
-        }
-
-        section p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        /* FOOTER */
         footer {
             background-color: #333;
             color: white;
@@ -115,28 +97,23 @@
             padding: 20px 0;
         }
 
-        /* RESPONSIVE */
+        /* Responsive */
         @media (max-width: 1024px) {
             .topbar {
                 padding: 0 20px;
             }
-
-            .logo {
+            .topbar .logo {
                 height: 45px;
             }
-
             nav a {
                 font-size: 24px;
             }
-
             nav ul {
                 gap: 40px;
             }
-
             .hero-text {
-                font-size: 30px;
-                top: 55%;
-                right: 6%;
+                font-size: 28px;
+                right: 8%;
                 max-width: 300px;
             }
         }
@@ -147,25 +124,20 @@
                 height: auto;
                 padding: 10px 20px;
             }
-
-            .logo {
+            .topbar .logo {
                 height: 40px;
                 margin-bottom: 10px;
             }
-
             nav ul {
                 flex-direction: column;
                 gap: 20px;
                 align-items: center;
             }
-
             nav a {
                 font-size: 20px;
             }
-
             .hero-text {
-                font-size: 22px;
-                top: 50%;
+                font-size: 20px;
                 right: 5%;
                 max-width: 250px;
             }
@@ -174,36 +146,32 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="topbar">
-            <img src="GammaE_korjattu_jpg-100.jpg" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#tarina">TARINA</a></li>
-                    <li><a href="#galleria">GALLERIA</a></li>
-                    <li><a href="#yhteystiedot">YHTEYSTIEDOT</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Topbar -->
+    <header class="topbar">
+        <img src="GammaE_korjattu_jpg-100.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#tarina">TARINA</a></li>
+                <li><a href="#galleria">GALLERIA</a></li>
+                <li><a href="#yhteystiedot">YHTEYSTIEDOT</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- HERO IMAGE & RUNO -->
+    <!-- Hero image + runo -->
     <section id="hero">
         <img src="leikattu_stilli.jpg" alt="Gamma E still" class="hero-image">
         <div class="hero-text">
-            <p>
-                Gamma E virtaa sinussa<br>
-                Joka näkee auringon silmät kiinni<br>
-                Jonka karvat nousevat pystyyn innosta ja intohimosta<br>
-                Joka rakastaa syvemmin kuin maan ytimeen on matkaa<br>
-                Jonka kyyneleet muovaavat rannattomia uomia
-            </p>
+Gamma E virtaa sinussa
+Joka näkee auringon silmät kiinni
+Jonka karvat nousevat pystyyn innosta ja intohimosta
+Joka rakastaa syvemmin kuin maan ytimeen on matkaa
+Jonka kyyneleet muovaavat rannattomia uomia
         </div>
     </section>
 
-    <!-- MAIN CONTENT -->
+    <!-- Main content (poistettu KERAMIIKKA/KALANNAHKA) -->
     <main>
         <section id="minusta">
             <p>
@@ -213,7 +181,7 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
         <p>All rights reserved</p>
     </footer>
