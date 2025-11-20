@@ -63,6 +63,33 @@
         color: #FFCBBC;
     }
 
+    /* HERO SECTION */
+    #hero {
+        position: relative;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto 40px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 65%;                   /* alemmas */
+        right: 10%;                 /* oikealle */
+        color: white;
+        text-align: right;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 100;
+        font-size: 28px;
+        line-height: 1.4;
+        max-width: 400px;
+    }
+
     /* MAIN CONTENT */
     main {
         max-width: 1200px;
@@ -119,6 +146,13 @@
         nav ul {
             gap: 40px;
         }
+
+        .hero-text {
+            font-size: 22px;
+            top: 60%;
+            right: 8%;
+            max-width: 300px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -142,6 +176,13 @@
         nav a {
             font-size: 20px;
         }
+
+        .hero-text {
+            font-size: 18px;
+            top: 55%;
+            right: 5%;
+            max-width: 250px;
+        }
     }
     </style>
 </head>
@@ -161,6 +202,18 @@
             </nav>
         </div>
     </header>
+
+    <!-- HERO IMAGE & RUNO -->
+    <section id="hero">
+        <img src="leikattu_stilli.jpg" alt="Gamma E still" class="hero-image">
+        <div class="hero-text">
+            <p>Gamma E virtaa sinussa<br>
+            Joka näkee auringon silmät kiinni<br>
+            Jonka karvat nousevat pystyyn innosta ja intohimosta<br>
+            Joka rakastaa syvemmin kuin maan ytimeen on matkaa<br>
+            Jonka kyyneleet muovaavat rannattomia uomia</p>
+        </div>
+    </section>
 
     <!-- MAIN CONTENT -->
     <main>
