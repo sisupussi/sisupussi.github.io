@@ -142,4 +142,81 @@
             }
         }
 
-        @media (max-width: 7
+        @media (max-width: 768px) {
+            .topbar {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+
+            nav a {
+                font-size: 20px;
+            }
+
+            .hero-text {
+                font-size: 18px;
+                top: 55%;
+                right: 5%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="topbar">
+            <img src="GammaE_korjattu_jpg-100.jpg" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#tarina">TARINA</a></li>
+                    <li><a href="#galleria">GALLERIA</a></li>
+                    <li><a href="#yhteystiedot">YHTEYSTIEDOT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO IMAGE & RUNO -->
+    <section id="hero">
+        <img src="leikattu_stilli.jpg" alt="Gamma E still" class="hero-image">
+        <div class="hero-text">
+            <p>
+            Gamma E virtaa sinussa<br>
+            Joka näkee auringon silmät kiinni<br>
+            Jonka karvat nousevat pystyyn innosta ja intohimosta<br>
+            Joka rakastaa syvemmin kuin maan ytimeen on matkaa<br>
+            Jonka kyyneleet muovaavat rannattomia uomia
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section id="minusta">
+            <p>
+                Keramiikka ja kalannahka ovat materiaaleja, jotka ovat olleet käytössä jo vuosituhansia. 
+                GammaE luo materiaalilähtöisiä sisustusesineitä ja asusteita modernisti perinteitä kunnioittaen.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
